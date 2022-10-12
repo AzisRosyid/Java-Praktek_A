@@ -16,9 +16,9 @@ public class Tugas6_4 {
 
         String bil = "";
         int hasil = 0;
-        for(int i = 1; i <= a; i++) {
+        for(int i = a; i >= 1; i--) {
             bil += i; 
-            if(i < a) bil += " + ";
+            if(i > 1) bil += " + ";
             hasil += i;
         }
 
