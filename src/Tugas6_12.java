@@ -24,7 +24,7 @@ public class Tugas6_12 {
         }       
         System.out.println("Total Bilangan : " + a);
         System.out.println("Rata-Rata : " + (double)a/(double)i);
-        System.out.println("Maximum : " + max);
-        System.out.println("Minimum : " + min);
+        System.out.println("Nilai Maximum : " + max);
+        System.out.println("Nilai Minimum : " + min);
     }
 }
