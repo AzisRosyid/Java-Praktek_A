@@ -1,12 +1,11 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
 public class Tugas7_1 {
     public static void main(String[] args) {
-        System.out.println("=== Program Menghitung nilai rata-rata dari 10 orang mahasiswa ===\n");
-
-        int jumlahMahasiswa = 10; 
+        int jumlahMahasiswa = 10;
+        System.out.println("=== Program Menghitung nilai rata-rata dari " + jumlahMahasiswa + " orang mahasiswa ===\n");
+ 
         final String[] jenisNilai = {"Keaktifan", "Tugas", "Ujian Tengah Semester", "Ujian Akhir Semester"}; 
         final int[] persetaseNilai = {10, 15, 25, 50};
         int[][] nilai = new int[jenisNilai.length][jumlahMahasiswa];
