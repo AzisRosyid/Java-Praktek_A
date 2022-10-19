@@ -11,17 +11,17 @@ public class Tugas7_1 {
         final int[] persetaseNilai = {10, 15, 25, 50};
         int[][] nilai = new int[jenisNilai.length][jumlahMahasiswa];
         for(int i = 0; i < jumlahMahasiswa; i++) for(int j= 0; j < jenisNilai.length; j++) {
-            int a = (int)(Math.random()*100);
-            // while(true) {
-            //     try {
-            //         System.out.printf("Masukkan Nilai " + jenisNilai[j] + ", Mahasiswa ke-" + (i + 1) + " : ");
-            //         Scanner scnA = new Scanner(System.in);
-            //         a = scnA.nextInt();
-            //         break;
-            //     } catch (Exception e) {
-            //         System.out.println("\nInput harus berformat nomor!\n");
-            //     }
-            // }
+            int a;
+            while(true) {
+                try {
+                    System.out.printf("Masukkan Nilai " + jenisNilai[j] + ", Mahasiswa ke-" + (i + 1) + " : ");
+                    Scanner scnA = new Scanner(System.in);
+                    a = scnA.nextInt();
+                    break;
+                } catch (Exception e) {
+                    System.out.println("\nInput harus berformat nomor!\n");
+                }
+            }
 
             nilai[j][i] = a;
             if(j == jenisNilai.length - 1) System.out.println();
