@@ -88,7 +88,7 @@ public class Explore {
             System.out.println("=".repeat(columnsLength));
             System.out.printf("|%" + -(columnsLength - 3 - totalLength) + "s|%" + -totalLength + "s|\n", "Total", curr(total));
             System.out.println("=".repeat(columnsLength));
-            System.out.printf("|%" + -(columnsLength - 3 - totalLength) + "s|", "Bayar");
+            System.out.printf("|%" + -(columnsLength - 3 - totalLength) + "s|Rp", "Bayar");
             try {
                 Scanner scn = new Scanner(System.in);
                 bayar = scn.nextDouble();
@@ -117,13 +117,13 @@ public class Explore {
             columnsLength = columns.length();
             pw.printf("\n%" + (columnsLength/2-6) + "sNOTA PEMBELIAN\n\n" + "Tanggal : " + LocalDate.now() + "\n", "");
             pw.println("=".repeat(columnsLength) + "\n" + columns + "\n" + "=".repeat(columnsLength));
-            for (int i = 0; i < namaBarang.size(); i++) pw.printf("|%" + -noLength + "s|%" + -namaLength + "s|%" + -jumlahLength + "s|%" + -hargaLength + "s|%" + -totalLength + "s|\n", ((i + 1) + "."), namaBarang.get(i), jumlahBarang.get(i), hargaBarang.get(i), (hargaBarang.get(i) * jumlahBarang.get(i)));
+            for (int i = 0; i < namaBarang.size(); i++) pw.printf("|%" + -noLength + "s|%" + -namaLength + "s|%" + -jumlahLength + "s|%" + -hargaLength + "s|%" + -totalLength + "s|\n", ((i + 1) + "."), namaBarang.get(i), jumlahBarang.get(i), curr(hargaBarang.get(i)), curr(hargaBarang.get(i) * jumlahBarang.get(i)));
             pw.println("=".repeat(columnsLength));
-            pw.printf("|%" + -(columnsLength - 3 - totalLength) + "s|%" + -totalLength + "s|\n", "Total", total);
+            pw.printf("|%" + -(columnsLength - 3 - totalLength) + "s|%" + -totalLength + "s|\n", "Total", curr(total));
             pw.println("=".repeat(columnsLength));
-            pw.printf("|%" + -(columnsLength - 3 - totalLength) + "s|%" + -totalLength + "s|\n", "Bayar", bayar);
+            pw.printf("|%" + -(columnsLength - 3 - totalLength) + "s|%" + -totalLength + "s|\n", "Bayar", curr(bayar));
             pw.println("=".repeat(columnsLength));
-            pw.printf("|%" + -(columnsLength - 3 - totalLength) + "s|%" + -totalLength + "s|\n", "Kembalian", kembalian);
+            pw.printf("|%" + -(columnsLength - 3 - totalLength) + "s|%" + -totalLength + "s|\n", "Kembalian", curr(kembalian));
             pw.println("=".repeat(columnsLength));
             pw.close();
         } catch (Exception e) {
