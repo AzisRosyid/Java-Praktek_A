@@ -20,15 +20,15 @@ public class Explore {
         String[] idMenu = {"MENU001", "MENU002", "MENU003", "MENU004", "MENU005", "MENU006", "MENU007", "MENU008"};
         System.out.println("MENU MAKANAN : ");
         System.out.println("___________________________________________________________________");
-        System.out.println("No Nama                    Harga");
-        System.out.println("1. Mie Instan           Rp 3500,00");
-        System.out.println("2. Telur                Rp 25000,00");
-        System.out.println("3. Beras 1kg            Rp 12000,00");
-        System.out.println("4. Minyak 1 liter       Rp 16000,00");
-        System.out.println("5. Gula                 Rp 10000,00");
-        System.out.println("6. Kopi                 Rp 5000,00");
-        System.out.println("7. Teh                  Rp 4000,00");
-        System.out.println("8. Syrup                Rp 20000,00");
+        System.out.println("No Nama                    Harga          Kode");
+        System.out.println("1. Mie Instan           Rp 3500,00        MENU001");
+        System.out.println("2. Telur                Rp 25000,00       MENU002");
+        System.out.println("3. Beras 1kg            Rp 12000,00       MENU003");
+        System.out.println("4. Minyak 1 liter       Rp 16000,00       MENU004");
+        System.out.println("5. Gula                 Rp 10000,00       MENU005");
+        System.out.println("6. Kopi                 Rp 5000,00        MENU006");
+        System.out.println("7. Teh                  Rp 4000,00        MENU007");
+        System.out.println("8. Syrup                Rp 20000,00       MENU008");
         System.out.println(""); 
         System.out.println("___________________________________________________________________");
         while(true) {
